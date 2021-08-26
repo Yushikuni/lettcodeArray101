@@ -6,7 +6,7 @@ public class Solution
         for(int i = 0; i < nums.Length; i++)
         {
            int n = nums[i];
-            for(int j = 0; j < i; j++)
+            for(int j = 0; j < nums.Length; j++)
             {
                 int o = nums[j];
                 if(n == o)
