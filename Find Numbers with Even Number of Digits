@@ -15,7 +15,7 @@ public class Solution
                 pocetCislic += num;
                 num = num / 10;
             }
-            if(pocetCislic %2 == 0)
+            if(pocetCislic % 2 == 0)
             {
                 ++countEven;
                 pocetCislic = 0;
@@ -24,3 +24,10 @@ public class Solution
         return countEven;
     }
 }
+
+/*Takže náš postup řešení by měl být:
+1. Projít všechny čísla v poli
+2. Pro každé z čísel v poli projít každou jeho číslici
+3. Spočítat počet číslic
+4. Při přechodu na nové číslo zkontrolovat, zda byl počet číslic předchozího čísla sudý
+5. Pokud ano, navýšit výsledek o 1, jinak nikoli*/
