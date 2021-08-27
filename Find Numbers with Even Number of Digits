@@ -11,10 +11,7 @@ public class Solution
             pocetCislic = 0;
             while(num != 0)
             {
-                if(num % 10 != 0)
-                {
-                    ++pocetCislic;
-                }
+                ++pocetCislic;
                 num = num / 10;
             }
             if(pocetCislic % 2 == 0)
