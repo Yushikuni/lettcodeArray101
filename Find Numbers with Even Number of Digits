@@ -4,17 +4,19 @@ public class Solution
     {
         int countEven = 0;
         int num = -1;
+        int pocetCislic = 0;
         for (int i = 0; i < nums.Length; i++)
         {
             num = nums[i];      
-            for(int j = 0; j < num; j++)
+            for(int j = 0; num != 0; j++)
             {
-                num = num % 10;
-                if(num % 2 == 0)
+                num = num % 10;                
+                pocetCislic += num;
+                num = num / 10;
+                if(pocetCislic %2 == 0)
                 {
                     ++countEven;
                 }
-                num = num / 10;                
             }
         }
         return countEven;
