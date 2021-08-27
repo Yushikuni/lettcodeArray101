@@ -13,10 +13,10 @@ public class Solution
                 num = num % 10;                
                 pocetCislic += num;
                 num = num / 10;
-                if(pocetCislic %2 == 0)
-                {
-                    ++countEven;
-                }
+            }
+            if(pocetCislic %2 == 0)
+            {
+                ++countEven;
             }
         }
         return countEven;
