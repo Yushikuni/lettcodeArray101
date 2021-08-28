@@ -26,7 +26,7 @@ public class Solution
             //pokud je tam nula tak proved duplicity
             if(arr[i] == 0)
             {
-                arr[i + duplicity] = 0;
+                //arr[i + duplicity] = 0;
                 //odecet duplicity
                 duplicity--; 
                 //kontrola kvuli preteceni ale asi nefunguje
