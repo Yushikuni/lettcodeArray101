@@ -9,9 +9,8 @@ public class Solution
         {
             if(nums[i] != nums[momentalne])
             {
-                nums[momentalne+1];
-                nums[i] = nums[i];
-                //nums[momentalne+1];                
+                nums[momentalne];
+                nums[i] = nums[i];  
                 ++delka;
                 ++momentalne;
             }
