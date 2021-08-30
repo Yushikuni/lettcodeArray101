@@ -13,6 +13,7 @@ public class Solution
                 nums[i] = nums[i];  
                 ++delka;
                 ++momentalne;
+                
             }
         }
         
