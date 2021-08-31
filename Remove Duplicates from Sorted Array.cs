@@ -10,16 +10,16 @@ public class Solution
             int temp = -1;
             if(nums[i] != nums[momentalne])
             {
-                temp = nums[momentalne];
-                nums[momentalne] = nums[i];
-                nums[i] = temp;                
+                temp = nums[i];
+                nums[i] = nums[momentalne] = 
+                nums[momentalne] = temp;                
                 ++delka;
                 ++momentalne;
                 temp = -1;
             }
         } 
         //sort
-        Array.Sort(nums);
+        //Array.Sort(nums);
         return delka+1;
     }
 }
