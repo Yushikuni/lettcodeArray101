@@ -13,11 +13,13 @@ public class Solution
                 temp = nums[momentalne];
                 nums[momentalne] = nums[i];
                 nums[i] = temp;
+                temp = -1;
                 ++delka;
-                ++momentalne;                
+                ++momentalne;
             }
-        }
-        
+        } 
+        //sort
+        Array.Sort(nums);
         return delka+1;
     }
 }
