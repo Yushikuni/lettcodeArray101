@@ -12,10 +12,10 @@ public class Solution
             {
                 temp = nums[momentalne];
                 nums[momentalne] = nums[i];
-                nums[i] = temp;
-                temp = -1;
+                nums[i] = temp;                
                 ++delka;
                 ++momentalne;
+                temp = -1;
             }
         } 
         //sort
