@@ -7,13 +7,14 @@ public class Solution
         
         for(int i = 0; i < nums.Length; ++i)
         {
+            int temp = -1;
             if(nums[i] != nums[momentalne])
             {
-                nums[momentalne];
-                nums[i] = nums[i];  
+                temp = nums[momentalne];
+                nums[momentalne] = nums[i];
+                nums[i] = temp;
                 ++delka;
-                ++momentalne;
-                
+                ++momentalne;                
             }
         }
         
