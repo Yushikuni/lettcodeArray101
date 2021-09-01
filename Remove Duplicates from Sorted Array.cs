@@ -11,7 +11,7 @@ public class Solution
             if(nums[i] != nums[momentalne])
             {
                 temp = nums[i];
-                nums[i] = nums[momentalne + 1] = 
+                nums[i] = nums[momentalne + 1]; 
                 nums[momentalne + 1] = temp;                
                 ++delka;
                 ++momentalne;
