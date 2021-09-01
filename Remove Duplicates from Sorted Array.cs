@@ -18,8 +18,6 @@ public class Solution
                 temp = -1;
             }
         } 
-        //sort
-        //Array.Sort(nums);
-        return delka+1;
+        return delka + 1;
     }
 }
