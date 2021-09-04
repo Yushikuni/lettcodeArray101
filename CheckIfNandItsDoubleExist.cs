@@ -10,7 +10,7 @@ public class Solution
         {
             for(int j = 0; j < arr.Length; ++j)
             {
-                if(arr[i] == 2*arr[j] && arr[i] % 2 == 0)
+                if(arr[i] == 2*arr[j])// || arr[i] % 2 == 0)
                 {
                     return true;
                 }
