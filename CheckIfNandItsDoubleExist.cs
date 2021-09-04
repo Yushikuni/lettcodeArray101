@@ -6,11 +6,11 @@ public class Solution
         {
              return false;
         }
-        for (int i = 0; i < arr.Length; ++i) 
+        for (int i = 0; i < arr.Length ; ++i) 
         {
-            for(int j = 0; j < i; ++j)
+            for(int j = 0; j < arr.Length; ++j)
             {
-                if(arr[i] == 2*arr[j] || arr[j] % 2 == 0)
+                if(arr[i] == 2*arr[j] && arr[i] % 2 == 0)
                 {
                     return true;
                 }
