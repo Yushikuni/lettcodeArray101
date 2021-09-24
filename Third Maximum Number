@@ -1,1 +1,42 @@
-
+public class Solution 
+{
+    public int ThirdMax(int[] nums) 
+    {
+        int prvniMax = -1;
+        int druhyMax = -1;
+        int tretiMax = -1;        
+        for(int i = 0; i < nums.Length; i++)
+        {
+            if(nums[i] > prvniMax)
+            {
+                tretiMax = druhyMax;
+                druhyMax = prvniMax;
+                prvniMax = nums[i];
+            }
+            else if(nums[i] > druhyMax && nums[i] < prvniMax)
+            {
+                tretiMax = druhyMax;
+                druhyMax = nums[i];
+            }
+            else if(nums[i] > tretiMax && nums[i] < druhyMax)
+            {
+                tretiMax = nums[i];
+            }
+        }
+        if(nums.Length < 3)
+        {
+            if(nums.Length == 2)
+            {
+                return druhyMax;
+            }
+            else
+            {
+                return prvniMax;
+            }
+        }
+        else
+        {
+            return tretiMax;
+        }        
+    }
+}
