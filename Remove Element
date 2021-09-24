@@ -2,6 +2,29 @@ public class Solution
 {
     public int RemoveElement(int[] nums, int val) 
     {  
+        int index = 0;
+        int velikost = nums.Length;
+       
+        while(index < velikost)
+        {
+            if(nums[index] == val)
+            {
+                nums[index] = nums[velikost-1];
+                --velikost;
+            }
+            else
+            {
+                index++;
+            } 
+        }  
+        return velikost;
+    }
+}
+//nefunkcni
+/*public class Solution 
+{
+    public int RemoveElement(int[] nums, int val) 
+    {  
         int i = 0;
         for (int j = 0; j < nums.Length; j++)
         {
@@ -15,4 +38,4 @@ public class Solution
         }
         return i;
     }
-}
+}*/
