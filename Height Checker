@@ -1,1 +1,20 @@
-
+/*
+public class Solution 
+{
+    public int HeightChecker(int[] heights) 
+    {
+        int ruzne = 0;        
+        for(int i = 0; i < heights.Length; ++i)
+        {
+            for(int j = 0; j < i; ++j)
+            {
+                if(heights[i] != heights[j])
+                {
+                    ++ruzne;
+                }
+            }
+        }
+        return ruzne;        
+    }
+}
+*/
