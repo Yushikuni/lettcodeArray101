@@ -25,14 +25,7 @@ public class Solution
         }
         if(nums.Length < 3)
         {
-            if(nums.Length == 2)
-            {
-                return druhyMax;
-            }
-            else
-            {
-                return prvniMax;
-            }
+            return prvniMax;
         }
         else
         {
