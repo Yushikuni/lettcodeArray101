@@ -1,3 +1,13 @@
+public class Solution 
+{
+    public int HeightChecker(int[] heights) 
+    {
+        var serazenePole = new List<int>(heights);
+        serazenePole.Sort();
+
+        return heights.Where((t, i) => t != serazenePole[i]).Count();     
+    }
+}
 /*
 public class Solution 
 {
