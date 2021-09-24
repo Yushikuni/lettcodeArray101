@@ -1,3 +1,39 @@
+/*//hazi to error, neprojde to testem na INT32.MINVALUE!
+public class Solution 
+{
+    public int ThirdMax(int[] nums) 
+    {
+        int prvniMax = Int32.MinValue;
+        int druhyMax = Int32.MinValue;
+        int tretiMax = Int32.MinValue;        
+        for(int i = 0; i < nums.Length; i++)
+        {
+            if(nums[i] > prvniMax)
+            {
+                tretiMax = druhyMax;
+                druhyMax = prvniMax;
+                prvniMax = nums[i];
+            }
+            else if(nums[i] > druhyMax && nums[i] < prvniMax)
+            {
+                tretiMax = druhyMax;
+                druhyMax = nums[i];
+            }
+            else if(nums[i] > tretiMax && nums[i] < druhyMax)
+            {
+                tretiMax = nums[i];
+            }
+        }
+        if (tretiMax != Int32.MinValue)
+        {
+            return tretiMax;
+        }            
+        else
+        {
+            return prvniMax; 
+        }                 
+    }
+}
 // hazi error, neprojde to testem kde pole je: [2,2,3]
 public class Solution 
 {
@@ -34,3 +70,4 @@ public class Solution
         }        
     }
 }
+*/
