@@ -1,3 +1,4 @@
+// hazi error, neprojde to testem kde pole je: [2,2,3]
 public class Solution 
 {
     public int ThirdMax(int[] nums) 
